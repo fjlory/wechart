@@ -1,0 +1,11 @@
+<!--pages/three/three.wxml-->
+<text>pages/three/three.wxml</text>
+ <navigator url="/pages/index/index">首页</navigator>
+ <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
